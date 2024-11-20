@@ -34,11 +34,12 @@ public class Ejemplo051 {
         
         while (contador <= limite){
             System.out.printf("Ingrese calificación "
-                    + "número %d\n", contador);
-            calificacion = entrada.nextDouble();
-            suma_total = suma_total + calificacion;
+                    + "número %d\n", contador); //
+            calificacion = entrada.nextDouble(); // 7.5
+            suma_total = suma_total + calificacion; // 0 + 7.5
             mensajeFinal = String.format("%s%f\n", 
                     mensajeFinal, calificacion);
+                    // "" + 7.5 + "\n" == 7.5\n
             // contador
             contador = contador + 1;
         }
