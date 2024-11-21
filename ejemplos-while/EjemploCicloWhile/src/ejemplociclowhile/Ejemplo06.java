@@ -31,6 +31,9 @@ public class Ejemplo06 {
                 + "estudiantes de su materia");
         // true 
         // while (bandera) {
+        /* Estas dos lineas de codigo son lo mismo debido a que no hace falta
+           escribir el == true porque por el hecho de ser boolean ya es
+           verdadero*/ 
         while(bandera==true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
