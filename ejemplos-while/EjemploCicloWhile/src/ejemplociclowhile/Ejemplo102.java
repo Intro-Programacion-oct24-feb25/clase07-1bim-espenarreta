@@ -70,7 +70,7 @@ public class Ejemplo102 {
             operacion = tabla + contador;
             
             cadena = String.format("%s%d+%d=%d\n", 
-                    cadena, 
+                    cadena_suma, 
                     tabla, 
                     contador,
                     operacion);
@@ -78,7 +78,7 @@ public class Ejemplo102 {
             operacion = tabla - contador;
             
             cadena = String.format("%s%d-%d=%d\n", 
-                    cadena, 
+                    cadena_resta, 
                     tabla, 
                     contador,
                     operacion);
@@ -86,7 +86,7 @@ public class Ejemplo102 {
             operacion = tabla * contador;
             
             cadena = String.format("%s%d*%d=%d\n", 
-                    cadena, 
+                    cadena_multiplicacion, 
                     tabla, 
                     contador,
                     operacion);
