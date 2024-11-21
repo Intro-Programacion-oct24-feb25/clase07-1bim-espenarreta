@@ -50,7 +50,7 @@ public class Ejemplo102 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        int limite_tabla = 5;
+        int limite_tabla;
         int contador = 1;
         int operacion;
         int tabla;
@@ -62,12 +62,15 @@ public class Ejemplo102 {
         String cadena_suma = ""; // cadena acumulador
         String cadena_resta = ""; // cadena acumulador
         String cadena_multiplicacion = ""; // cadena acumulador
-                        
+        
+        System.out.println("Ingrese el limite de la tabla");
+            limite_tabla = entrada.nextInt();
+            
         while (contador <= limite_tabla){
             operacion = tabla + contador;
             
             cadena = String.format("%s%d+%d=%d\n", 
-                    cadena, 
+                    cadena_suma, 
                     tabla, 
                     contador,
                     operacion);
@@ -75,15 +78,15 @@ public class Ejemplo102 {
             operacion = tabla - contador;
             
             cadena = String.format("%s%d-%d=%d\n", 
-                    cadena, 
+                    cadena_resta, 
                     tabla, 
                     contador,
                     operacion);
             
             operacion = tabla * contador;
             
-            cadena = String.format("%s%d* %d=%d\n", 
-                    cadena, 
+            cadena = String.format("%s%d*%d=%d\n", 
+                    cadena_multiplicacion, 
                     tabla, 
                     contador,
                     operacion);
@@ -91,12 +94,10 @@ public class Ejemplo102 {
         }
         operacion = tabla + contador;
             
-            cadena = String.format("%s%d+%d=%d\n", 
-                    cadena, 
-                    tabla, 
-                    contador,
-                    operacion);
-            contador = contador + 1;
+            cadena = String.format("Tabla de sumar\n%s\n" 
+                    + "Tabla de restar\n%s\n" + "Tabla de multiplicar\n%s\n"
+                    , cadena_suma, cadena_resta, cadena_multiplicacion);
+            
         System.out.printf("%s\n", cadena);
         
     }
