@@ -69,7 +69,7 @@ public class Ejemplo102 {
         while (contador <= limite_tabla){
             operacion = tabla + contador;
             
-            cadena = String.format("%s%d+%d=%d\n", 
+            cadena_suma = String.format("%s%d+%d=%d\n", 
                     cadena_suma, 
                     tabla, 
                     contador,
@@ -77,7 +77,7 @@ public class Ejemplo102 {
             
             operacion = tabla - contador;
             
-            cadena = String.format("%s%d-%d=%d\n", 
+            cadena_resta = String.format("%s%d-%d=%d\n", 
                     cadena_resta, 
                     tabla, 
                     contador,
@@ -85,7 +85,7 @@ public class Ejemplo102 {
             
             operacion = tabla * contador;
             
-            cadena = String.format("%s%d*%d=%d\n", 
+            cadena_multiplicacion = String.format("%s%d*%d=%d\n", 
                     cadena_multiplicacion, 
                     tabla, 
                     contador,
